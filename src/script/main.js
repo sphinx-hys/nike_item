@@ -1,5 +1,7 @@
 //首页
-import { tabSwitch, lunboPic } from './index_module.js';
+import { tabSwitch, lunboPic, taobaoPic, twomenu } from './index_module.js';
 
 tabSwitch();
 lunboPic();
+taobaoPic();
+twomenu()
