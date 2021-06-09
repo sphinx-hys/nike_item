@@ -1,0 +1,10 @@
+数据库的名称
+表的名称
+表里面的数据
+alldata.php  渲染数据
+conn.php 数据库的连接
+detail.php 详情页渲染数据
+list.php 列表页的数据
+login.php 登录交互页面
+registry.php 注册交互页面
+image_captcha.php 验证码页面

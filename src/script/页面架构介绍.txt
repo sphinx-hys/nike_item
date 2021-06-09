@@ -1,0 +1,8 @@
+cartlist_module.js   购物车列表页面
+detail_module.js     详情页列表页面
+index_module.js     首页
+jquery.pagination.js  分页插件
+list_module.js         列表
+login_module.js     登录
+registry_module.js 注册
+main.js  主入口文件

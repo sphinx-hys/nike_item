@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tab {
+    padding: 100px;
+}
+
+.tab_title {
+    width: 306px;
+    height: 28px;
+}
+
+.tab_title ul li {
+    float: left;
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_content .item {
+    width: 304px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.tab_content .show {
+    display: block;
+}
+
+.active {
+    background-color: red;
+}
+
+.banner {
+    width: 790px;
+    height: 340px;
+    position: relative;
+    border: 1px solid orange;
+    margin: 10px;
+}
+
+.banner ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.banner ul li.show {
+    opacity: 1;
+}
+
+.banner ol {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.banner ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    margin: 0 5px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+.banner ol li.active {
+    background: blue;
+}
+
+#right,
+#left {
+    font-size: 100px;
+    color: #fff;
+    font-family: verdana;
+    position: absolute;
+    text-decoration: none;
+    top: 110px;
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}
+
+#right:hover,
+#left:hover {
+    color: #000;
+}
