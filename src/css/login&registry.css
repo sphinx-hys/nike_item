@@ -1,0 +1,63 @@
+.pre-modal-window {
+  /* visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility 0s linear .2s; */
+  display: flex;
+  z-index: 1002;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* .is-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .2s, visibility 0s; 
+} */
+.pre-modal {
+  width: 436px;
+  display: block;
+  /* transition: transform .4s ease, opacity .2s; */
+  /* transition-delay: .1s; */
+  border-radius: 3px;
+  position: relative;
+  background: #fff;
+  margin: auto;
+}
+
+.pre-modal-exit {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 30px;
+}
+
+.pre-modal-view {
+  width: 436px;
+  height: 495px;
+  color: #8d8d8d;
+  font-family: Helvetica;
+  font-size: 14px;
+  margin: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_logo {
+  background: url(../img/login_logo.png) no-repeat;
+  background-size: 43px;
+}
+
+/*# sourceMappingURL=login&registry.css.map */
