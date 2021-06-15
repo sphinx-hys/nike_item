@@ -1,239 +1,85 @@
-@charset "UTF-8";
-.header {
-  width: 1190px;
-  height: 36px;
-  background-color: orange;
-  margin: 0 auto 10px;
+@import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
+.pre-modal-window {
+  display: flex;
+  z-index: 1002;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
-
-.nav {
-  width: 100%;
-  height: 60px;
-  background-color: #abcdef;
-}
-
-.banner1 {
-  width: 1190px;
-  margin: 0px auto;
-}
-
-.menu {
+.pre-modal-window .pre-modal {
+  width: 436px;
+  display: block;
+  border-radius: 3px;
   position: relative;
-  z-index: 3;
+  background: #fff;
+  margin: auto;
+}
+.pre-modal-window .pre-modal .pre-modal-exit {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 30px;
 }
 
-.menu ul {
-  overflow: hidden;
-  padding: 10px 0;
-  height: 450px;
-  background-color: #fefefe;
-  color: #636363;
-  margin-top: 10px;
-  width: 190px;
-}
-
-.menu ul li {
-  height: 25px;
-  line-height: 25px;
-  padding-left: 18px;
-}
-
-.menu ul li.active {
-  background-color: #d9d9d9;
-}
-
-.menu li a {
+.pre-modal-view {
+  width: 436px;
+  height: 495px;
+  color: #8d8d8d;
+  font-family: Helvetica;
   font-size: 14px;
-  color: #333;
-  text-decoration: none;
+  margin: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: left;
 }
-
-.menu li span {
-  padding: 0 2px;
+.pre-modal-view .login,
+.pre-modal-view .registry {
+  display: flex;
+  flex-direction: column;
+}
+.pre-modal-view .login .login_logo,
+.pre-modal-view .registry .login_logo {
+  width: 109px;
+  height: 39px;
+  margin: 0 auto;
+  background: url(../img/login_logo.png) no-repeat center center;
+  background-size: 43px;
+}
+.pre-modal-view .login p,
+.pre-modal-view .registry p {
+  font-size: 26px;
+  color: #111;
+  margin: 0 auto;
+  padding: 32px 0 26px;
+}
+.pre-modal-view .login input,
+.pre-modal-view .login button,
+.pre-modal-view .registry input,
+.pre-modal-view .registry button {
+  width: 324px;
+  height: 40px;
+  margin: 10px 25px;
+}
+.pre-modal-view .login button,
+.pre-modal-view .registry button {
+  background: #000;
+  color: #fff;
+  margin: 30px auto;
+}
+.pre-modal-view .login b,
+.pre-modal-view .registry b {
+  margin: 0 auto;
+  color: #8d8d8d;
   font-size: 12px;
 }
-
-.cartlist {
-  position: absolute;
-  left: 191px;
-  top: 0;
-  width: 998px;
-  min-height: 468px;
-  border: 1px solid #f7f7f7;
-  background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  display: none;
-  transition: top 0.3s ease;
-}
-
-.item {
-  padding: 20px;
-  display: none;
-}
-
-/* tab选项卡 */
-.tab_title {
-  width: 306px;
-  height: 28px;
-}
-
-.tab_title ul li {
-  float: left;
-  width: 100px;
-  height: 26px;
-  line-height: 26px;
-  border: 1px solid #ccc;
-  text-align: center;
-  cursor: pointer;
-}
-
-.tab_content .item {
-  width: 304px;
-  height: 200px;
-  border: 1px solid #ccc;
-  display: none;
-}
-
-.tab_content .show {
-  display: block;
-}
-
-.active {
-  background-color: red;
-}
-
-/* 轮播图 */
-.banner {
-  width: 790px;
-  height: 340px;
-  position: relative;
-  border: 1px solid orange;
-  margin: 10px;
-}
-
-.banner ul li {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-}
-
-.banner ul li.show {
-  opacity: 1;
-}
-
-.banner ol {
-  position: absolute;
-  width: 180px;
-  height: 20px;
-  left: 20px;
-  bottom: 20px;
-}
-
-.banner ol li {
-  float: left;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #000;
-  margin: 0 5px;
-  text-indent: -99999px;
-  cursor: pointer;
-}
-
-.banner ol li.active {
-  background: blue;
-}
-
-#right,
-#left {
-  font-size: 100px;
-  color: #fff;
-  font-family: verdana;
-  position: absolute;
-  text-decoration: none;
-  top: 110px;
-}
-
-#left {
-  left: 20px;
-}
-
-#right {
-  right: 20px;
-}
-
-#right:hover,
-#left:hover {
-  color: #000;
-}
-
-/* 幻灯片效果 */
-.taobao {
-  width: 790px;
-  height: 340px;
-  position: relative;
-  border: 1px solid orange;
-  margin: 10px auto;
-  overflow: hidden;
-}
-
-.taobao ul {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.taobao ul li {
-  width: 790px;
-  height: 340px;
-  float: left;
-}
-
-.taobao ol {
-  position: absolute;
-  width: 180px;
-  height: 20px;
-  left: 20px;
-  bottom: 20px;
-}
-
-.taobao ol li {
-  float: left;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #000;
-  margin: 0 5px;
-  text-indent: -99999px;
-  cursor: pointer;
-}
-
-.taobao ol li.active {
-  background: blue;
-}
-
-#rightarrow,
-#leftarrow {
-  font-size: 100px;
-  color: #fff;
-  font-family: verdana;
-  position: absolute;
-  text-decoration: none;
-  top: 110px;
-  display: none;
-}
-
-#leftarrow {
-  left: 20px;
-}
-
-#rightarrow {
-  right: 20px;
-}
-
-#rightarrow:hover,
-#leftarrow:hover {
+.pre-modal-view .login b a,
+.pre-modal-view .registry b a {
   color: #000;
 }
 
