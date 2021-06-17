@@ -1,0 +1,38 @@
+@charset "utf-8"; //支持中文注释
+@import "common";
+@import "header";
+main {
+    display: flex;
+    justify-content: space-around;
+    .pic {
+        width: 910px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        img {
+            width: 400px;
+            height: 500px;
+            margin: 10px;
+        }
+    }
+    .intro {
+        width: 376px;
+        .detail {
+            font-weight: 900;
+            float: left;
+        }
+        .price {
+            float: right;
+        }
+        button {
+            color: white;
+            background: #000;
+            width: 376px;
+            height: 60px;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+    }
+}
+
+@import "footer";

@@ -1,6 +1,5 @@
 .pre-modal-window {
-    // opacity: 0;
-    // transition: opacity .2s, visibility 0s linear .2s;
+    /*登录&注册界面*/
     display: flex;
     z-index: 1002;
     position: fixed;
@@ -10,6 +9,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, .6);
     .pre-modal {
+        /*遮盖层*/
         width: 436px;
         display: block;
         border-radius: 3px;
@@ -17,6 +17,7 @@
         background: #fff;
         margin: auto;
         .pre-modal-exit {
+            /*退出按钮*/
             position: absolute;
             top: 15px;
             right: 10px;
@@ -29,6 +30,7 @@
 }
 
 .pre-modal-view {
+    /*视窗*/
     width: 436px;
     height: 495px;
     color: #8d8d8d;
@@ -42,7 +44,7 @@
     .registry {
         display: flex;
         flex-direction: column;
-        .login_logo {
+        .logo {
             width: 109px;
             height: 39px;
             margin: 0 auto;
@@ -76,8 +78,3 @@
         }
     }
 }
-
-// .is-active {
-//     opacity: 1;
-//     transition: opacity .2s, visibility 0s; 
-// }

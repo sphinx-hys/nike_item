@@ -108,32 +108,64 @@ header .wrapper span {
   margin: 5px;
 }
 
-main ul {
-  width: 100%;
+main {
   display: flex;
+  width: 1350px;
+  margin: 0 auto;
+}
+main h4 {
+  font-size: 22px;
+}
+main .cartlist {
+  width: 70%;
+}
+main .cartlist .goods {
+  display: flex;
+  height: 150px;
+  padding: 24px 8px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
-main ul li {
-  width: 22%;
-  height: 508px;
-  list-style: none;
+main .cartlist .goods img {
+  width: 150px;
+  height: 150px;
 }
-main ul li a {
+main .cartlist .goods .mid {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  color: #000;
-  font-weight: 900;
 }
-main ul li a img {
-  width: 324px;
-  height: 324px;
+main .cartlist .goods .mid .detail {
+  width: 369px;
+  height: 112px;
 }
-main ul li a p {
-  margin-bottom: 20px;
+main .cartlist .goods .mid .num {
+  width: 20px;
 }
-main ul li a span::before {
+main .cartlist .goods .mid .delete {
+  cursor: pointer;
+}
+main .cartlist .goods .price {
+  width: 200px;
+}
+main .cartlist .goods .price p {
+  float: right;
+}
+main .cartlist .goods .price p::before {
+  content: '¥';
+}
+main .summary {
+  width: 30%;
+}
+main .summary div {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+}
+main .summary div span {
+  float: right;
+}
+main .summary div span::before {
   content: '¥';
 }
 
@@ -178,4 +210,4 @@ footer .wrapper {
   color: #7e7e7e;
 }
 
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=cartlist.css.map */

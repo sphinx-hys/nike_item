@@ -1,0 +1,65 @@
+@charset "utf-8"; //支持中文注释
+@import "common";
+@import "header";
+main {
+    display: flex;
+    width: 1350px;
+    margin: 0 auto;
+    h4 {
+        font-size: 22px;
+    }
+    .cartlist {
+        width: 70%;
+        .goods {
+            display: flex;
+            height: 150px;
+            padding: 24px 8px;
+            justify-content: space-between;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .mid {
+                display: flex;
+                flex-direction: column;
+                .detail {
+                    width: 369px;
+                    height: 112px;
+                }
+                .num {
+                    width: 20px;
+                }
+                .delete {
+                    cursor: pointer;
+                }
+            }
+            .price {
+                width: 200px;
+                p {
+                    &::before {
+                        content: '¥';
+                    }
+                    float: right;
+                }
+            }
+        }
+    }
+    .summary {
+        width: 30%;
+        div {
+            border-top: 1px solid rgb(229, 229, 229);
+            border-bottom: 1px solid rgb(229, 229, 229);
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+            span {
+                float: right;
+                &::before {
+                    content: '¥';
+                }
+            }
+        }
+    }
+}
+
+@import "footer";

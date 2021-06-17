@@ -108,33 +108,38 @@ header .wrapper span {
   margin: 5px;
 }
 
-main ul {
-  width: 100%;
+main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+main .pic {
+  width: 910px;
+  display: flex;
   flex-wrap: wrap;
+  margin-left: 30px;
 }
-main ul li {
-  width: 22%;
-  height: 508px;
-  list-style: none;
+main .pic img {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
 }
-main ul li a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: #000;
+main .intro {
+  width: 376px;
+}
+main .intro .detail {
   font-weight: 900;
+  float: left;
 }
-main ul li a img {
-  width: 324px;
-  height: 324px;
+main .intro .price {
+  float: right;
 }
-main ul li a p {
-  margin-bottom: 20px;
-}
-main ul li a span::before {
-  content: '¥';
+main .intro button {
+  color: white;
+  background: #000;
+  width: 376px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 50px;
 }
 
 footer {
@@ -178,4 +183,4 @@ footer .wrapper {
   color: #7e7e7e;
 }
 
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=detail.css.map */
