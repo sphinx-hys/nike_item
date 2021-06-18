@@ -22,13 +22,58 @@
         </div>
     </header>
     <nav>
-
+        <a href="list.html">618专区</a>
+        <a href="list.html">新品尝鲜</a>
+        <a href="list.html">男子</a>
+        <a href="list.html">女子</a>
+        <a href="list.html">儿童</a>
+        <a href="list.html">专属定制</a>
+        <a href="list.html">夏日潮流型录</a>
     </nav>
     <div class="banner">
-
+        <div class="swiper">
+            <ul class="pic">
+                <li class="now">
+                    <a href="#"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_773,c_limit/44ada98b-2284-4041-899b-630cc490b623/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="" /></a>
+                </li>
+                <li class="next">
+                    <a href="#"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_773,c_limit/90687d02-147c-4679-8fdb-182249ba5d47/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_1288,c_limit/ad780154-135f-4ce7-8a8b-e88dd28ba5bd/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_1288,c_limit/b4224644-dd95-4722-a1b3-4cfa518fe120/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_1288,c_limit/115f9b27-eb7e-4370-8a7a-47ed85b09610/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="" /></a>
+                </li>
+            </ul>
+            <ol class="cricle"></ol>
+            <div class="btns">
+                <a href="javascript:;" class="leftbtn" style="float: left; margin-left: 6px;"></a>
+                <a href="javascript:;" class="rightbtn" style="float: right; margin-right: 6px;"></a>
+            </div>
+            <div class="leftBox"></div>
+            <div class="rightBox"></div>
+        </div>
     </div>
     <main>
-
+        <h2>精选故事</h2>
+        <div>
+            <a href="">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_1254,c_limit/1dbf9544-0bb3-4dc1-bc2b-e746620dc9e0/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="">
+            </a>
+        </div>
+        <h2>Nike App专属福利</h2>
+        <div class="part2">
+            <a href="">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_619,c_limit/e9369859-1968-4fab-98bd-347e37bd211c/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_619,c_limit/0e0b4c64-9c7d-495b-bd67-8f3ef2e4f8aa/%E8%80%90%E5%85%8B%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91.jpg" alt="">
+            </a>
+        </div>
     </main>
     <footer>
         <div class="wrapper">
@@ -132,21 +177,21 @@
                     <div class="logo"></div>
                     <p>登录NIKE账号</p>
                     <form action="" method="post" class="login_form">
-                        <input type="text" name="telnum" placeholder="手机号码" class="tel"><span class="checkspan"></span>
-                        <input type="password" name="password" placeholder="密码"><span class="checkspan"></span>
+                        <input type="text" name="telnum" placeholder="手机号码" class="telnum"><span class="checkspan"></span>
+                        <input type="password" name="password" placeholder="密码" class="password"><span class="checkspan"></span>
+                        <input type="submit" name="login_submit" class="submit" value="登录"></input>
                     </form>
-                    <button type="submit">登录</button>
                     <b>还不是会员？<a href="#">加入我们</a></b>
                 </div>
                 <!-- 注册 -->
                 <div class="registry" style="display:none;">
                     <div class="logo"></div>
                     <p>创建您的NIKE账号</p>
-                    <form action="" method="post" class="registry_form">
-                        <input type="text" name="telnum" placeholder="手机号码"><span class="checkspan"></span>
-                        <input type="password" name="password" placeholder="密码"><span class="checkspan"></span>
+                    <form action="http://10.31.155.37/week04/nike_item/php/registry.php" method="post" class="registry_form">
+                        <input type="text" name="registry_telnum" placeholder="手机号码" class="telnum"><span class="checkspan"></span>
+                        <input type="password" name="registry_password" placeholder="密码" class="password"><span class="checkspan"></span>
+                        <input type="submit" name="registry_submit" class="submit" value="注册"></input>
                     </form>
-                    <button type="submit" name="submit">注册</button>
                     <b>已经是会员？<a href="#">立即登录</a></b>
                 </div>
             </div>
@@ -155,3 +200,4 @@
 </body>
 
 </html>
+<script src="./script/swiper.js"></script>

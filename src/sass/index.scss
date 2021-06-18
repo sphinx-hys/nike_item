@@ -3,4 +3,18 @@
 @import "header";
 @import "nav";
 @import "banner";
+main {
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+        margin-top: 100px;
+    }
+    img {
+        width: 100%;
+    }
+    .part2 {
+        display: flex;
+    }
+}
+
 @import "footer";

@@ -1,6 +1,7 @@
 @charset "utf-8"; //支持中文注释
 @import "common";
 @import "header";
+@import "nav";
 main {
     display: flex;
     width: 1350px;
@@ -11,17 +12,19 @@ main {
     .cartlist {
         width: 70%;
         .goods {
-            display: flex;
             height: 150px;
             padding: 24px 8px;
-            justify-content: space-between;
+            border-bottom: 1px solid #666;
             img {
                 width: 150px;
                 height: 150px;
+                float: left;
+                margin-right: 30px;
             }
             .mid {
                 display: flex;
                 flex-direction: column;
+                float: left;
                 .detail {
                     width: 369px;
                     height: 112px;
@@ -31,9 +34,13 @@ main {
                 }
                 .delete {
                     cursor: pointer;
+                    text-decoration: underline;
+                    color: #666;
+                    width: 32px;
                 }
             }
             .price {
+                float: left;
                 width: 200px;
                 p {
                     &::before {

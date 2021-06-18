@@ -21,6 +21,15 @@
             <a href="#"><span class="loginbtn">登录</span></a>
         </div>
     </header>
+    <nav>
+        <a href="list.html">618专区</a>
+        <a href="list.html">新品尝鲜</a>
+        <a href="list.html">男子</a>
+        <a href="list.html">女子</a>
+        <a href="list.html">儿童</a>
+        <a href="list.html">专属定制</a>
+        <a href="list.html">夏日潮流型录</a>
+    </nav>
     <main>
         <ul>
         </ul>
@@ -127,21 +136,21 @@
                     <div class="logo"></div>
                     <p>登录NIKE账号</p>
                     <form action="" method="post" class="login_form">
-                        <input type="text" name="telnum" placeholder="手机号码" class="tel"><span class="checkspan"></span>
-                        <input type="password" name="password" placeholder="密码"><span class="checkspan"></span>
+                        <input type="text" name="telnum" placeholder="手机号码" class="telnum"><span class="checkspan"></span>
+                        <input type="password" name="password" placeholder="密码" class="password"><span class="checkspan"></span>
+                        <input type="submit" name="login_submit" class="submit" value="登录"></input>
                     </form>
-                    <button type="submit">登录</button>
                     <b>还不是会员？<a href="#">加入我们</a></b>
                 </div>
                 <!-- 注册 -->
                 <div class="registry" style="display:none;">
                     <div class="logo"></div>
                     <p>创建您的NIKE账号</p>
-                    <form action="" method="post" class="registry_form">
-                        <input type="text" name="telnum" placeholder="手机号码"><span class="checkspan"></span>
-                        <input type="password" name="password" placeholder="密码"><span class="checkspan"></span>
+                    <form action="http://10.31.155.37/week04/nike_item/php/registry.php" method="post" class="registry_form">
+                        <input type="text" name="registry_telnum" placeholder="手机号码" class="telnum"><span class="checkspan"></span>
+                        <input type="password" name="registry_password" placeholder="密码" class="password"><span class="checkspan"></span>
+                        <input type="submit" name="registry_submit" class="submit" value="注册"></input>
                     </form>
-                    <button type="submit" name="submit">注册</button>
                     <b>已经是会员？<a href="#">立即登录</a></b>
                 </div>
             </div>

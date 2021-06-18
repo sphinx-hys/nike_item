@@ -1,5 +1,25 @@
 @charset "UTF-8";
 @import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
+header {
+  height: 36px;
+  line-height: 36px;
+  background: #f5f5f5;
+  padding: 0 38px 0 36px;
+}
+header .wrapper {
+  float: right;
+}
+header .wrapper a {
+  color: #111;
+  text-decoration: none;
+}
+header .wrapper a:hover {
+  color: #757575;
+}
+header .wrapper span {
+  margin: 5px;
+}
+
 .pre-modal-window {
   /*登录&注册界面*/
   display: flex;
@@ -64,18 +84,16 @@
   padding: 32px 0 26px;
 }
 .pre-modal-view .login input,
-.pre-modal-view .login button,
-.pre-modal-view .registry input,
-.pre-modal-view .registry button {
+.pre-modal-view .registry input {
   width: 324px;
   height: 40px;
   margin: 10px 25px;
 }
-.pre-modal-view .login button,
-.pre-modal-view .registry button {
+.pre-modal-view .login .submit,
+.pre-modal-view .registry .submit {
   background: #000;
   color: #fff;
-  margin: 30px auto;
+  margin-bottom: 30px;
 }
 .pre-modal-view .login b,
 .pre-modal-view .registry b {
@@ -87,25 +105,23 @@
 .pre-modal-view .registry b a {
   color: #000;
 }
+.pre-modal-view .login .checkspan,
+.pre-modal-view .registry .checkspan {
+  /*报错信息*/
+  margin: 0 30px;
+}
 
-header {
-  height: 36px;
-  line-height: 36px;
-  background: #f5f5f5;
-  padding: 0 38px 0 36px;
+nav {
+  height: 60px;
+  background: white;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
 }
-header .wrapper {
-  float: right;
-}
-header .wrapper a {
-  color: #111;
+nav a {
   text-decoration: none;
-}
-header .wrapper a:hover {
-  color: #757575;
-}
-header .wrapper span {
-  margin: 5px;
+  font-weight: 900;
+  color: #000;
 }
 
 main {
@@ -120,18 +136,20 @@ main .cartlist {
   width: 70%;
 }
 main .cartlist .goods {
-  display: flex;
   height: 150px;
   padding: 24px 8px;
-  justify-content: space-between;
+  border-bottom: 1px solid #666;
 }
 main .cartlist .goods img {
   width: 150px;
   height: 150px;
+  float: left;
+  margin-right: 30px;
 }
 main .cartlist .goods .mid {
   display: flex;
   flex-direction: column;
+  float: left;
 }
 main .cartlist .goods .mid .detail {
   width: 369px;
@@ -142,8 +160,12 @@ main .cartlist .goods .mid .num {
 }
 main .cartlist .goods .mid .delete {
   cursor: pointer;
+  text-decoration: underline;
+  color: #666;
+  width: 32px;
 }
 main .cartlist .goods .price {
+  float: left;
   width: 200px;
 }
 main .cartlist .goods .price p {
