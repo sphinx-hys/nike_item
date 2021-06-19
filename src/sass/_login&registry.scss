@@ -1,0 +1,83 @@
+.pre-modal-window {
+    /*登录&注册界面*/
+    display: flex;
+    z-index: 1002;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    .pre-modal {
+        /*遮盖层*/
+        width: 436px;
+        display: block;
+        border-radius: 3px;
+        position: relative;
+        background: #fff;
+        margin: auto;
+        .pre-modal-exit {
+            /*退出按钮*/
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            border: none;
+            cursor: pointer;
+            background: #fff;
+            font-size: 30px;
+        }
+    }
+}
+
+.pre-modal-view {
+    /*视窗*/
+    width: 436px;
+    height: 495px;
+    color: #8d8d8d;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: auto;
+    padding: 28px;
+    box-sizing: border-box;
+    text-align: left;
+    .login,
+    .registry {
+        display: flex;
+        flex-direction: column;
+        .logo {
+            width: 109px;
+            height: 39px;
+            margin: 0 auto;
+            background: url(../img/login_logo.png) no-repeat center center;
+            background-size: 43px;
+        }
+        p {
+            font-size: 26px;
+            color: #111;
+            margin: 0 auto;
+            padding: 32px 0 26px;
+        }
+        input {
+            width: 324px;
+            height: 40px;
+            margin: 10px 25px;
+        }
+        .submit {
+            background: #000;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        b {
+            margin: 0 auto;
+            color: #8d8d8d;
+            font-size: 12px;
+            a {
+                color: #000;
+            }
+        }
+        .checkspan {
+            /*报错信息*/
+            margin: 0 30px;
+        }
+    }
+}

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import "https://necolas.github.io/normalize.css/5.0.0/normalize.css";
+header {
+  height: 36px;
+  line-height: 36px;
+  background: #f5f5f5;
+  padding: 0 38px 0 36px;
+}
+header .wrapper {
+  float: right;
+}
+header .wrapper a {
+  color: #111;
+  text-decoration: none;
+}
+header .wrapper a:hover {
+  color: #757575;
+}
+header .wrapper span {
+  margin: 5px;
+}
+
+.pre-modal-window {
+  /*登录&注册界面*/
+  display: flex;
+  z-index: 1002;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.pre-modal-window .pre-modal {
+  /*遮盖层*/
+  width: 436px;
+  display: block;
+  border-radius: 3px;
+  position: relative;
+  background: #fff;
+  margin: auto;
+}
+.pre-modal-window .pre-modal .pre-modal-exit {
+  /*退出按钮*/
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 30px;
+}
+
+.pre-modal-view {
+  /*视窗*/
+  width: 436px;
+  height: 495px;
+  color: #8d8d8d;
+  font-family: Helvetica;
+  font-size: 14px;
+  margin: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.pre-modal-view .login,
+.pre-modal-view .registry {
+  display: flex;
+  flex-direction: column;
+}
+.pre-modal-view .login .logo,
+.pre-modal-view .registry .logo {
+  width: 109px;
+  height: 39px;
+  margin: 0 auto;
+  background: url(../img/login_logo.png) no-repeat center center;
+  background-size: 43px;
+}
+.pre-modal-view .login p,
+.pre-modal-view .registry p {
+  font-size: 26px;
+  color: #111;
+  margin: 0 auto;
+  padding: 32px 0 26px;
+}
+.pre-modal-view .login input,
+.pre-modal-view .registry input {
+  width: 324px;
+  height: 40px;
+  margin: 10px 25px;
+}
+.pre-modal-view .login .submit,
+.pre-modal-view .registry .submit {
+  background: #000;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.pre-modal-view .login b,
+.pre-modal-view .registry b {
+  margin: 0 auto;
+  color: #8d8d8d;
+  font-size: 12px;
+}
+.pre-modal-view .login b a,
+.pre-modal-view .registry b a {
+  color: #000;
+}
+.pre-modal-view .login .checkspan,
+.pre-modal-view .registry .checkspan {
+  /*报错信息*/
+  margin: 0 30px;
+}
+
+nav {
+  height: 60px;
+  background: white;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+main .pic {
+  width: 910px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+main .pic img {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+}
+main .intro {
+  width: 376px;
+}
+main .intro .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .intro .detail {
+  font-weight: 900;
+  line-height: 30px;
+  margin-top: 40px;
+  width: 250px;
+}
+main .intro .price::before {
+  content: '¥';
+}
+main .intro button,
+main .intro .enter {
+  color: white;
+  background: #000;
+  width: 376px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+main .intro .enter {
+  text-decoration: none;
+  display: block;
+  background: white;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  line-height: 60px;
+}
+
+footer {
+  height: 333px;
+  background: #111;
+}
+footer .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  padding-top: 15px;
+}
+.top ul li {
+  list-style: none;
+  margin: 10px 30px;
+}
+.top ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom {
+  height: 91px;
+  border-top: 1px solid #222;
+}
+.bottom ul {
+  float: right;
+  font-size: 12px;
+  display: flex;
+}
+.bottom ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.bottom ul li a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+/*# sourceMappingURL=detail.css.map */

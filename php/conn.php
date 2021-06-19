@@ -3,9 +3,9 @@ header('content-type:text/html;charset=utf-8');//设置字符编码
 //1.php连接数据库
 //mysqli(主机名,用户名,密码,数据库名)
 define('HOST','localhost');//主机名
-define('USERNAME','root');//用户名
-define('PASSWORD','root');//密码
-define('DBNAME','h5_2104');//数据库名
+define('USERNAME', 'root1');//用户名
+define('PASSWORD', '123456');//密码
+define('DBNAME', 'Database1');//数据库名
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
 
 if($conn->connect_error){//自定义错误，前面采用容错处理(代码前面添加@)。
